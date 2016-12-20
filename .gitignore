@@ -27,3 +27,12 @@
 *.exe
 *.out
 *.app
+CDB2OSG/cdb2osg.build/Debug
+CDB2OSG/CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+CDB2OSG/.cproject
+CDB2OSG/.project
+CDB2OSG/cdb2osg.xcodeproj
+CDB2OSG/CMakeScripts
+CDB2OSG/Debug
