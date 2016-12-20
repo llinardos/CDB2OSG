@@ -1,6 +1,11 @@
 # CDB2OSG
 Visualization tool to navigate [Common Database (CDB)](http://www.presagis.com/products_services/standards/cdb/) databases using [OpenSceneGraph(OSG)](http://www.openscenegraph.org/).
 
+Supports:
+  * Primary Terrain Elevation datasets.
+  * Yearly Terrain Imagery datasets.
+  * Dynamic level of detail changes.
+
 # Ejecución
 Ejecutar:
     
