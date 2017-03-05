@@ -281,9 +281,6 @@ int main(int argc, char **argv) {
         return 0;
     }
     
-    //std::string sampleDbName = "Escenario grandeu";
-    //std::string rootPath = "/Users/kanobius/dev/CDB Samples/";
-    
     std::string sampleDbName = argv[2];
     std::string rootPath = argv[1];
     std::string tilesFromCommandLine = argv[3];
@@ -293,13 +290,12 @@ int main(int argc, char **argv) {
         return 0;
     }
     
-    CDB::LodTile::List sampleTiles = tilesFromString("N33W118");
-    // sampleTiles.push_back(new CDB::LodTile( CDB::Latitude::North(33), CDB::Longitude::West(118)));
+    CDB::LodTile::List sampleTiles = tilesFromString(tilesFromCommandLine);
     
     SampleDatabase sampleDB = SampleDatabase();
     sampleDB.name = sampleDbName;
     sampleDB.tiles = sampleTiles;
-    sampleDB.subsampling = false;
+    sampleDB.subsampling = true;
     
     Main *main = new SimpleMain();
     main->database = sampleDB;
